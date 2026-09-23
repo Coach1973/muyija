@@ -25,6 +25,8 @@
     .tile:nth-child(5n+2),.tile:nth-child(7n+4){aspect-ratio:3/4}
     .tile:nth-child(6n){aspect-ratio:1/1}
     .tile img{width:100%;height:100%;object-fit:cover}
+  
+    .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}.video-card{position:relative;display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;overflow:hidden;border-radius:14px}.video-thumb{position:relative;aspect-ratio:16/9;background:var(--forest)}.video-thumb video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}.video-card:hover .video-thumb video{transform:scale(1.03)}.video-play{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-display);font-size:42px;color:var(--surface);background:color-mix(in oklch,var(--fg) 38%,transparent);transition:background .2s}.video-card:hover .video-play{background:color-mix(in oklch,var(--fg) 22%,transparent)}.video-caption{display:block;margin-top:12px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--muted)}.video-grid-portrait{margin:46px auto 0;display:flex;flex-direction:column;align-items:center}.video-card-portrait{aspect-ratio:9/16;width:340px;max-width:100%}.video-card-portrait .video-thumb{aspect-ratio:9/16}.video-card-portrait .video-caption{text-align:center;margin-top:14px}@media(max-width:900px){.video-grid{grid-template-columns:1fr}.video-card-portrait{width:280px}}
   </style>
 </head>
 <body>
@@ -42,6 +44,23 @@
 
     <section class="section" data-od-id="about">
       <div class="container"><div class="intro"><div><p class="eyebrow">ABOUT · 沐藝家</p><h2>沒有標準答案的<br>木藝教室</h2></div><p class="intro-copy">從外銷木藝工廠轉型成親子體驗空間，沐藝家把木工、彩繪與口湖的慢節奏放在一起。挑選筆筒、時鐘、收納盒等木製品，再用自己的顏色完成它——每一件都不會重複。</p></div><div class="facts"><div class="fact"><div class="fact-num">免費</div><p>園區參觀；DIY 材料與餐飲另計，以現場公告為準。</p></div><div class="fact"><div class="fact-num">180<span style="font-size:.42em">人</span></div><p>旅遊實訪文章記錄的空間容納資訊，適合家庭與團體安排。</p></div><div class="fact"><div class="fact-num">63<span style="font-size:.42em">張</span></div><p>第一版已整理的現場照片，涵蓋空間、作品、創作與周邊景色。</p></div></div></div>
+    </section>
+
+    <section class="section" id="wood-to-memory" data-od-id="videos">
+      <div class="container"><div class="press-head"><div><p class="eyebrow">MEMORIES IN THE MAKING · DIY 花絮</p><h2>把木頭變回憶</h2><p class="lead">看每一塊木頭，怎麼變成一家人一輩子的回憶。</p></div><div><div class="source-count">07</div><span style="color:var(--muted);font-size:13px">段 DIY 手作影片</span></div></div>
+        <div class="video-grid video-grid-landscape">
+          <button class="video-card" type="button" data-video-src="videos/01.mp4" aria-label="播放影片 1 · 23 秒"><div class="video-thumb"><video src="videos/01.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 01（23 秒）</span></button>
+          <button class="video-card" type="button" data-video-src="videos/02.mp4" aria-label="播放影片 2 · 23 秒"><div class="video-thumb"><video src="videos/02.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 02（23 秒）</span></button>
+          <button class="video-card" type="button" data-video-src="videos/03.mp4" aria-label="播放影片 3 · 43 秒"><div class="video-thumb"><video src="videos/03.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 03（43 秒）</span></button>
+          <button class="video-card" type="button" data-video-src="videos/04.mp4" aria-label="播放影片 4 · 67 秒"><div class="video-thumb"><video src="videos/04.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 04（67 秒）</span></button>
+          <button class="video-card" type="button" data-video-src="videos/05.mp4" aria-label="播放影片 5 · 32 秒"><div class="video-thumb"><video src="videos/05.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 05（32 秒）</span></button>
+          <button class="video-card" type="button" data-video-src="videos/07.mp4" aria-label="播放影片 7 · 60 秒"><div class="video-thumb"><video src="videos/07.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 07（60 秒）</span></button>
+        </div>
+        <div class="video-grid-portrait">
+          <p class="eyebrow" style="color:var(--muted);margin-top:42px">直幅 · 手機拍攝</p>
+          <button class="video-card video-card-portrait" type="button" data-video-src="videos/06.mp4" aria-label="播放直幅影片 6 · 52 秒"><div class="video-thumb"><video src="videos/06.mp4" muted preload="metadata" playsinline></video><span class="video-play" aria-hidden="true">▶</span></div><span class="video-caption">手作花絮 · 06（52 秒・直幅）</span></button>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="experience" data-od-id="experience">
@@ -76,12 +95,19 @@
   <footer><div class="container foot"><div class="foot-word">沐藝家</div><small>雲林口湖・木藝彩繪・親子慢旅行<br>第一版網站提案</small></div></footer>
   <div class="mobile-bar"><a href="tel:0922762363">電話預約</a><a href="https://www.google.com/maps/search/?api=1&query=%E6%B2%90%E8%97%9D%E5%AE%B6+%E9%9B%B2%E6%9E%97%E7%B8%A3%E5%8F%A3%E6%B9%96%E9%84%89" target="_blank" rel="noopener">開啟導航</a></div>
   <dialog class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="關閉照片">×</button><img alt=""><div class="lightbox-caption"></div></dialog>
+  <dialog class="lightbox" id="video-lightbox"><button class="lightbox-close" aria-label="關閉影片">×</button><video controls autoplay playsinline style="width:100%;height:calc(100% - 54px);object-fit:contain;background:#000"></video><div class="lightbox-caption"></div></dialog>
   <script>
     document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed','false'));btn.setAttribute('aria-pressed','true');document.querySelectorAll('.tile').forEach(x=>{x.hidden=btn.dataset.filter!=='all'&&x.dataset.cat!==btn.dataset.filter})}));
     const lb=document.querySelector('#lightbox'),lbImg=lb.querySelector('img'),lbCap=lb.querySelector('.lightbox-caption');
     document.querySelectorAll('.tile').forEach(tile=>tile.addEventListener('click',()=>{const im=tile.querySelector('img');lbImg.src=im.getAttribute('src');lbImg.alt=im.alt;lbCap.innerHTML=`${tile.querySelector('span').textContent} · <a href="${tile.dataset.srcUrl}" target="_blank" rel="noopener" style="text-decoration:underline">查看原始文章</a>`;lb.hidden=false;if(lb.showModal)lb.showModal();lb.querySelector('button').focus()}));
     function closeLightbox(){if(lb.close)lb.close();lb.hidden=true;lbImg.removeAttribute('src')}
     lb.querySelector('.lightbox-close').addEventListener('click',closeLightbox);lb.addEventListener('click',e=>{if(e.target===lb)closeLightbox()});lb.addEventListener('cancel',e=>{e.preventDefault();closeLightbox()});
+
+    // Video lightbox
+    const vlb=document.querySelector('#video-lightbox'),vlbVid=vlb.querySelector('video'),vlbCap=vlb.querySelector('.lightbox-caption');
+    document.querySelectorAll('.video-card').forEach(card=>card.addEventListener('click',()=>{const v=card.querySelector('video');vlbVid.src=v.getAttribute('src');vlbCap.textContent=card.querySelector('.video-caption').textContent;vlb.hidden=false;if(vlb.showModal)vlb.showModal();vlbVid.play().catch(()=>{})}));
+    function closeVideoLightbox(){vlbVid.pause();vlbVid.removeAttribute('src');vlbVid.currentTime=0;if(vlb.close)vlb.close();vlb.hidden=true}
+    vlb.querySelector('.lightbox-close').addEventListener('click',closeVideoLightbox);vlb.addEventListener('click',e=>{if(e.target===vlb)closeVideoLightbox()});vlb.addEventListener('cancel',e=>{e.preventDefault();closeVideoLightbox()});
   </script>
 </body>
 </html>
